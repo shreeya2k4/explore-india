@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+
+<button id="theme-btn" onclick="toggleMode()">🌙</button>
+
+    <h1 style="text-align:center;">Complete Your Booking</h1>
+
+    <!-- BOOK NOW BUTTON (OPENS POPUP) -->
+    <div style="text-align:center; margin-top:50px;">
+        <button onclick="openPopup()" class="main-book-btn">Proceed to Book</button>
+    </div>
+
+    <!-- POPUP FORM -->
+    <div id="popupForm" class="popup">
+        <div class="popup-content">
+
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+
+            <h2>Book Your Trip</h2>
+
+            <form>
+                <label>Destination:</label>
+                 <select>
+             <option>Choose Destination</option>
+               <option>Goa</option>
+               <option>Manali</option>
+               <option>Jaipur</option>
+              <option>Munnar, Keralam</option>
+             <option>Ladakh</option>
+            <option>Mumbai</option>
+           <option>Darjeeling</option>
+           <option>Andaman</option>
+    </select>
+
+
+                <label>Select Date:</label>
+                <input type="date" required>
+
+                <label>Travellers:</label>
+                <input type="number" min="1" required>
+
+                <label>Transport Mode:</label>
+                <select required>
+                    <option>Bus</option>
+                    <option>Train</option>
+                    <option>Flight</option>
+                </select>
+
+                <label>Phone Number:</label>
+                <input type="tel" required>
+
+                <label>Payment Method:</label>
+                <select required>
+                    <option>UPI</option>
+                    <option>Credit Card</option>
+                    <option>Debit Card</option>
+                    <option>Net Banking</option>
+                </select>
+
+                <button type="submit">Book Your Seats</button>
+            </form>
+
+        </div>
+    </div>
+
+<script src="booking.js"></script>
+
+</body>
+</html>

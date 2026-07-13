@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #fff8f0;
+}
+
+/* NAVBAR */
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: #4e342e;
+    color: white;
+    align-items: center;
+}
+
+.navbar h2 { 
+   color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+   }
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-top: 8px;
+    margin-right: 30px;
+}
+.nav-links a:hover {
+  color: #ffca28;
+ }
+
+/* CONTAINER */
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #4e342e;
+    font-size: 50px;
+}
+
+p { 
+   font-weight: bold;
+  }
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+    color: gray;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+   font-size: 33px;
+   color: #4e342e;
+   align-items: center;
+    }
+
+/* TRANSPORT BOX */
+.transport-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.transport-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* BEST OPTION */
+.best {
+    border: 2px solid #4a6cf7;
+    background: #eef2ff;
+}
+
+/* BUTTON */
+.transport-box a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #4a6cf7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.transport-box a:hover {
+    background: #3b5bdb;
+}
+
+/* TIP */
+.tip {
+    margin-top: 10px;
+    color: #555;
+    font-style: italic;
+}
+
+
+
+body.dark{
+    background:#121212;
+    color:white;
+}
+
+body.dark .navbar{
+    background:#111;
+}
+
+body.dark .card{
+    background:#2b2b2b;
+    color:white;
+}
+
+body.dark .transport-box{
+    background:#333;
+    color:white;
+}
+
+body.dark a{
+    color:#ffca28;
+}
